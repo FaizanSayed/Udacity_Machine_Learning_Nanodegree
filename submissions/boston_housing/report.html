@@ -483,6 +483,7 @@ Standard deviation of prices: $165,171.13
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong> <em>0.923</em></p>
+<p><em>The computed value of R^2 is very much near to the best value, i.e. 1. Therefore, we can say that the model has successfully captured the variation of the target variable.</em></p>
 
 </div>
 </div>
@@ -1675,7 +1676,7 @@ LTMzMzMzszrwBTLMzMzMzMzqwIMtMzMzMzOzOvBgy8zMzMzMrA482DIzMzMzM6sDD7bMzMzMzMzq
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> <em>The maximum depth of the second model is 3. The score of the training curve decreases as more training points are added. The score of the testing curve increases and converges with the training curve at the score of about 0.8. Having more training points definitely benefits the model.</em></p>
+<p><strong>Answer: </strong> <em>The maximum depth of the second model is 3. The score of the training curve decreases as more training points are added. The score of the testing curve increases and converges with the training curve at the score of about 0.8. Having more training points definitely benefits the model, but until a certain point after which there isn't much improvement in the performance with increase in the number of training points.</em></p>
 
 </div>
 </div>
@@ -2215,7 +2216,7 @@ xhhjWhVLfMYYY1oVS3zGGGNaFUt8xhhjWpX/D1WDpiuH8IjnAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> <em>Optimizing a learning algorithm requires to set the different parameters used by the algorithm to achieve the best performance out of the algorithm. It can get a bit cumbersome to tune these parameters manually. Grid search is a technique which helps in tuning these parameters to the values which lead to the best performance of the model. The technique systematically trains the model with different values of the parameters, cross-validates them and provides a value to each of the parameters with which the model gave the best performance.</em></p>
+<p><strong>Answer: </strong> <em>Optimizing a learning algorithm requires to set the different parameters used by the algorithm to achieve the best performance out of the algorithm. It can get a bit cumbersome to tune these parameters manually. Grid search is a technique which helps in tuning these parameters to the values which lead to the best performance of the model. The technique systematically trains the model with all the combinationsof the parameter values, cross-validates them and provides a value to each of the parameters with which the model gave the best performance.</em></p>
 
 </div>
 </div>
@@ -2236,7 +2237,7 @@ xhhjWhVLfMYYY1oVS3zGGGNaFUt8xhhjWpX/D1WDpiuH8IjnAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> <em>k-fold cross-validation training technique divides the dataset into k equal subsets. It then trains the model with k-1 subsets and the trained model is tested with the remaining subset. This is repeated k times so that each of the k subsets gets to be the test set. Cross-validation enables the grid search in evaluating the models with different values of the parameters and thereby, selecting the one which gives the best performance.</em></p>
+<p><strong>Answer: </strong> <em>k-fold cross-validation training technique divides the dataset into k equal subsets. It then trains the model with k-1 subsets and the trained model is tested with the remaining subset. This is repeated k times so that each of the k subsets gets to be the test set. Cross-validation enables the grid search in evaluating the models with different values of the parameters and thereby, selecting the one which gives the best performance. This is because using cross-validation, each and every data point gets to be tested. This helps in making the model understand the trend correctly as shown by the whole dataset, rather than just a particular chunk of it used in the training.</em></p>
 
 </div>
 </div>
@@ -2455,11 +2456,11 @@ Predicted selling price for Client 3&apos;s home: $892,850.00
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> *</p>
-<p>Predicted selling price for Client 1's home: $418,913.79</p>
-<p>Predicted selling price for Client 2's home: $230,781.25</p>
-<p>Predicted selling price for Client 3's home: $892,850.00</p>
-<p>The prices does seem reasonable giben the values for the respective features.*</p>
+<p><strong>Answer: </strong></p>
+<p><em>Predicted selling price for Client 1's home: $418,913.79</em></p>
+<p><em>Predicted selling price for Client 2's home: $230,781.25</em></p>
+<p><em>Predicted selling price for Client 3's home: $892,850.00</em></p>
+<p><em>The prices does seem reasonable given the values for the respective features. The second client's home has the lowest price among the three. This can be true as it has the least number of rooms among the three and also the percentage of the 'LSTAT' is highest. The 'PTRATIO' value is also highest. The price of the home of third client is highest as it has 8 rooms in it. The major influence in it's price seems to be the value of 'PTRATIO', which is just 3%.</em></p>
 
 </div>
 </div>
